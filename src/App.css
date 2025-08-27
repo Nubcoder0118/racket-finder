@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, #e6f2e6, #d9f0ff, #f5f5f5, #cce6ff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 192, 203, 0.7); /* semi-transparent pink */
+  color: purple;
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* this gets rid of the underline */
+.comparison{
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/* Main page content */
+.mainpage {
+  margin: 0 20px; /* better contrast with gradient */
+  text-decoration: none;
+
+}
+
+.header a{
+  position: relative;
+  text-decoration: none;
+}
+
+.header a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fff200;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.header a:hover::after{
+  width: 100%;
+}
+
+/* Flashcards container */
+.flashcards-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Flashcard styling */
+.flashcard {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent so gradient shows through */
+}
+
+/* Answer buttons */
+.answers button {
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #eee;
+  transition: 0.3s;
+}
+
+.answers button.selected {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Racket cards layout */
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Individual racket card */
+.racket-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* gradient slightly visible */
+}
+
+/* Racket image */
+.racket-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Racket info text */
+.racket-info p {
+  margin: 5px 0;
+  font-size: 14px;
 }

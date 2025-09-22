@@ -169,7 +169,8 @@ function App() {
                   style={{cursor:"pointer"}}
                 >
                   <img 
-                    src = {`http://localhost:8000/images/${racket.image}`} alt={racket.name} width="200"
+                    src = {`http://localhost:8000/images/${racket.image}`} alt={racket.name} 
+                    style = {{width: '350px', height: '200px', objectFit: 'contain'}}
                   />
                   {racket.name} — {racket.price}
                   

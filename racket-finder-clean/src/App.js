@@ -105,6 +105,18 @@ function App() {
     
   };
 
+  const handleRacketClick = (racket) => {
+  if (!selectedRacket1) {
+    setSelectedRacket1(racket.name);
+  } else if (!selectedRacket2) {
+    setSelectedRacket2(racket.name);
+  } else {
+    // Reset selection if both are already picked
+    setSelectedRacket1(racket.name);
+    setSelectedRacket2(null);
+  }
+  };
+
   const clickHandler = (racket) => {
     saveFavorite(racket);
     if (!selectedRacket1) {
@@ -116,6 +128,7 @@ function App() {
     setSelectedRacket1(racket.name);
     setSelectedRacket2(null);
   }
+
   };
 
   return (
@@ -161,22 +174,24 @@ function App() {
             </ul>
 
             <h3>Recommended Rackets:</h3>
-            <ul>
+            <div className = "results-container">
               {filteredRackets.map((racket, index) => (
-                <li 
+                <div 
                   key={index}
                   onClick={() => clickHandler(racket)} 
                   style={{cursor:"pointer"}}
                 >
                   <img 
+                    className="racket-image"
                     src = {`http://localhost:8000/images/${racket.image}`} alt={racket.name} 
                     style = {{width: '350px', height: '200px', objectFit: 'contain'}}
                   />
-                  {racket.name} — {racket.price}
                   
-                </li>
+                </div>
               ))}
-              </ul>
+             
+            </div>
+              
             <div className = "favorites">
               <h3>Your favorite Rackets: </h3>
               <ul>
@@ -193,10 +208,13 @@ function App() {
 
     {view === 'comparison' && (
       <Comparison 
-        equipment={{rackets: allRackets}}
+        filteredRackets={filteredRackets}
         selectedRacket1={selectedRacket1}
         selectedRacket2={selectedRacket2}
+        onRacketClick={handleRacketClick}
       />
+      
+
     )}
         </>
     );

@@ -1,19 +1,37 @@
-// src/Comparison.js
-import React from "react";
-
-const Comparison = ({ equipment, selectedRacket1, selectedRacket2 }) => {
-  if (!equipment || !equipment.rackets) return null;
-
-  // helper function to find racket data by name
-  const getRacket = (name) =>
-    equipment.rackets.find((r) => r.name === name) || null;
-
-  const racket1 = getRacket(selectedRacket1);
-  const racket2 = getRacket(selectedRacket2);
+import React, { useState } from "react";
+const Comparison = ({ filteredRackets, selectedRacket1, selectedRacket2, onRacketClick }) => {
+  const racket1 = filteredRackets.find(r => r.name === selectedRacket1);
+  const racket2 = filteredRackets.find(r => r.name === selectedRacket2);
 
   return (
     <div>
       <h2>🏸 Compare Rackets</h2>
+
+      <div className="results-container">
+        {filteredRackets.map(racket => (
+          <div
+            key={racket.name}
+            onClick={() => onRacketClick(racket)}
+            style={{
+              cursor: "pointer",
+              border: "1px solid #ccc",
+              borderRadius: "10px",
+              padding: "10px",
+              margin: "10px",
+              display: "inline-block",
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={`http://localhost:8000/images/${racket.image}`}
+              alt={racket.name}
+              style={{ width: "180px", height: "100px", objectFit: "contain" }}
+            />
+            <p>{racket.name}</p>
+            <p>{racket.price}</p>
+          </div>
+        ))}
+      </div>
 
       {racket1 && racket2 ? (
         <table border="1" cellPadding="8">

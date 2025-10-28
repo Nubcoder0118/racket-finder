@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 🏸 Racket Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack **Badminton Racket Finder** web app that helps players discover the perfect racket based on their play style, budget, and preferences.  
+Users can favorite rackets ❤️ (stored in MongoDB), compare two rackets, and browse equipment interactively through a quiz interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo  
+> Coming soon — hosted React frontend & Express backend.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🎯 Racket Finder Quiz  
+- Answer 3 quick questions about your play type, budget, and preferred style.  
+- Instantly get personalized racket recommendations.
 
-### `npm test`
+### ❤️ Favorites System  
+- Click the heart icon on a racket to save it to your favorites.  
+- Favorites are stored persistently in **MongoDB Atlas**.  
+- Click again to un-favorite (removes from both UI and database).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔍 Comparison Tool  
+- Compare two rackets side-by-side to evaluate stats and pricing.
 
-### `npm run build`
+### 🖼️ Local Image Hosting  
+- Racket images are served from an Express static `/public/images` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧰 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Area | Technology |
+|------|-------------|
+| Frontend | React (Vite / CRA) |
+| Backend | Node.js + Express |
+| Database | MongoDB Atlas (Mongoose ORM) |
+| Styling | CSS3 + custom gradient animation |
+| Tools | Nodemon, dotenv, CORS, Git, Atlas |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

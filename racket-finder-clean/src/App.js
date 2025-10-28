@@ -87,24 +87,49 @@ function App() {
     return `http://localhost:8000/images/${image}`;
   };
 
-  const saveFavorite = async(racket) => {
-    try {
-      const response = await fetch("http://localhost:8000/api/rackets", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(racket)
-      });
-      const saved = await response.json();
-      setFavorites(prev => {
-        const currentFavorites = Array.isArray(prev) ? prev : [] ;
-        return [...currentFavorites, saved]
-      });
-    } catch(err) {
-      console.log("Error saving racket: ",err);
-    };
+  const saveFavorite = async (racket) => {
+  // prevent duplicate saves
+  const alreadyFav = Array.isArray(favorites) && favorites.some(fav => fav.name === racket.name);
+  if (alreadyFav) return;
+
+  try {
+    const response = await fetch("http://localhost:8000/api/rackets", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(racket),
+    });
+
+    // Get the saved racket from MongoDB
+    const saved = await response.json();
+
+    // Update favorites with the saved racket object
+    setFavorites((prev) => {
+      const currentFavorites = Array.isArray(prev) ? prev : [];
+      const newFavorites = [...currentFavorites, saved];
+      console.log("Updated favorites:", newFavorites); // 🧠 debug line
+      return newFavorites;
+    });
+  } catch (err) {
+    console.log("Error saving racket:", err);
   }
+};
+
+  const removeFavorite = async (racketName) => {
+    try {
+      const encodedName = encodeURIComponent(racketName);
+      const response = await fetch(`http://localhost:8000/api/rackets/${encodedName}`, {
+      method: "DELETE",
+      });
+      if (!response.ok) {
+        console.error('failed to delete favorite');
+        return;
+      }
+      setFavorites((prev) => prev.filter((fav) => fav.name !== racketName));
+      console.log(`Removed ${racketName} from favorites`);
+    } catch (err) {
+      console.error("Error removing favorite:", err);
+    }
+  };
   const handleSelect = (questionId, answer) => {
     setAnswers(prev => ({...prev, [questionId]: answer}));
     setCurrentStep(prev => prev + 1);
@@ -165,23 +190,58 @@ function App() {
 
             <h3>Recommended Rackets:</h3>
             <div className = "results-container">
-              {filteredRackets.map((racket, index) => (
-                <div 
-                  key={index}
-                  onClick={() => clickHandler(racket)} 
-                  style={{cursor:"pointer"}}
-                >
-                  <img 
-                    className="racket-image"
-                    src = {`http://localhost:8000/images/${racket.image}`} alt={racket.name} 
-                    style = {{width: '350px', height: '200px', objectFit: 'contain'}}
-                  />
-                  
-                </div>
-              ))}
-             
-            </div>
-              
+              {filteredRackets.map((racket, index) => {
+    const isFavorite = Array.isArray(favorites) && favorites.some(fav => fav.name === racket.name);
+
+    return (
+      <div
+        key={index}
+        className="racket-card"
+        style={{
+          position: "relative",
+          margin: "10px",
+          textAlign: "center",
+        }}
+      >
+        {/* ❤️ Heart Button */}
+        <button
+          className={`heart-button ${isFavorite ? "favorited" : ""}`}
+          onClick={(e) => {
+            e.stopPropagation(); // prevent triggering clickHandler
+            if (isFavorite) {
+              removeFavorite(racket.name);
+            } else {
+              saveFavorite(racket);
+            }
+          }}
+          style={{
+            position: "absolute",
+            top: "8px",
+            right: "8px",
+            background: "transparent",
+            border: "none",
+            fontSize: "24px",
+            cursor: "pointer",
+            color: isFavorite ? "red" : "gray",
+            transition: "color 0.2s ease",
+          }}
+          aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
+        >
+          {isFavorite ? "❤️" : "🤍"}
+        </button>
+
+        {/* Image click still works for selection */}
+        <img
+          className="racket-image"
+          src={`http://localhost:8000/images/${racket.image}`}
+          alt={racket.name}
+          style={{ width: "350px", height: "200px", objectFit: "contain", cursor: "pointer" }}
+          onClick={() => clickHandler(racket)}
+        />
+        </div>
+      );
+    })}
+        </div>    
             <div className = "favorites">
               <h3>Your favorite Rackets: </h3>
               <ul>
@@ -191,7 +251,6 @@ function App() {
               </ul>
             </div>
             </div>
-            
         )}
       </div>
     )}

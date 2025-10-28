@@ -41,7 +41,7 @@
           "balance": "Even",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://us.yonex.com/products/astrox-100zz"
+          "image": "astrox88sp2.png"
         },
         {
           "name": "Astrox 77 Pro",
@@ -51,7 +51,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://www.badmintonalley.com/Yonex_Astrox_100_ZZ_Dark_Navy_Badminton_Racket_p/racket-yonex-astrox-100zz-dknv.htm"
+          "image": "astrox77p.png"
         },
         {
           "name": "Astrox 88D Tour",
@@ -61,7 +61,7 @@
           "balance": "Head-Heavy",
           "playing_type": "Doubles",
           "racket_style": "Attack",
-          "image": "https://www.badmintonwarehouse.com/products/yonex-astrox-88d-tour-2024-badminton-racket"
+          "image": "as88dpro.png"
         },
         {
           "name": "Astrox 88S Tour",
@@ -71,7 +71,7 @@
           "balance": "Even",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-88s-tour-badminton-racket"
+          "image": "astrox88sp2.png"
         },
         {
           "name": "Astrox 77 Tour",
@@ -81,17 +81,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-77-tour-badminton-racket"
-        },
-        {
-          "name": "Astrox 100 Game",
-          "price": "$149 CAD",
-          "category": "Attacking",
-          "weight": "3U/4U",
-          "balance": "Head-Heavy",
-          "playing_type": "Singles",
-          "racket_style": "Attack",
-          "image": "https://www.nydhi.com/products/astrox-100-game-yonex-badminton-racket"
+          "image": "astrox77p.png"
         },
         {
           "name": "Astrox 88D Game",
@@ -101,7 +91,7 @@
           "balance": "Head-Heavy",
           "playing_type": "Doubles",
           "racket_style": "Attack",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-88d-game-badminton-racket"
+          "image": "astrox88dpro.png"
         },
         {
           "name": "Astrox 88S Game",
@@ -111,7 +101,7 @@
           "balance": "Even",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-88s-game-badminton-racket"
+          "image": "astrox88dpro.png"
         },
         {
           "name": "Astrox 70",
@@ -121,7 +111,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintondirect.com/products/yonex-astrox-100zz-badminton-racket"
+          "image": "astrox70.png"
         },
         {
           "name": "Astrox 22",
@@ -131,27 +121,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-22-badminton-racket"
-        },
-        {
-          "name": "Astrox 38S",
-          "price": "$165 CAD",
-          "category": "Intermediate",
-          "weight": "4U/5U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-38s-badminton-racket"
-        },
-        {
-          "name": "Astrox 38D",
-          "price": "$165 CAD",
-          "category": "Intermediate",
-          "weight": "4U/5U",
-          "balance": "Head-Heavy",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Attack",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-38d-badminton-racket"
+          "image": "astrox22.png"
         },
         {
           "name": "Nanoflare 1000Z",
@@ -161,7 +131,7 @@
           "balance": "Head-Light",
           "playing_type": "Singles/Doubles",
           "racket_style": "Speed",
-          "image": "https://www.nydhi.com/products/astrox-100-game-yonex-badminton-racket"
+          "image": "nanoflare1000z.png"
         },
         {
           "name": "Nanoflare 1000 Game",
@@ -171,7 +141,7 @@
           "balance": "Head-Light",
           "playing_type": "Singles/Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-1000-game-badminton-racket"
+          "image": "nanoflare100z.png"
         },
         {
           "name": "Nanoflare 800 Pro",
@@ -181,7 +151,7 @@
           "balance": "Head-Light",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://hmbrsports.com/products/yonex-astrox-100-zz-dark-navy-preorder/3098887000006632008"
+          "image": "nanoflare800p.png"
         },
         {
           "name": "Nanoflare 800 Game",
@@ -191,7 +161,7 @@
           "balance": "Head-Light",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-800-game-badminton-racket"
+          "image": "nanoflare800p.png"
         },
         {
           "name": "Nanoflare 800 Tour",
@@ -201,27 +171,7 @@
           "balance": "Head-Light",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-800-tour-badminton-racket"
-        },
-        {
-          "name": "Nanoflare 700",
-          "price": "$245 CAD",
-          "category": "Speed",
-          "weight": "4U/5U",
-          "balance": "Head-Light",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-700-badminton-racket"
-        },
-        {
-          "name": "Nanoflare 170 Light",
-          "price": "$115 CAD",
-          "category": "Beginner/Speed",
-          "weight": "5U/6U",
-          "balance": "Head-Light",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-170-light-badminton-racket"
+          "image": "nanoflare800p.png"
         },
         {
           "name": "Nanoflare 380 Sharp",
@@ -231,27 +181,17 @@
           "balance": "Head-Light",
           "playing_type": "Singles/Doubles",
           "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-380-sharp-badminton-racket"
-        },
-        {
-          "name": "Nanoflare 270 Speed",
-          "price": "$145 CAD",
-          "category": "Intermediate/Speed",
-          "weight": "4U/5U",
-          "balance": "Head-Light",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Speed",
-          "image": "https://badmintonwarehouse.com/products/yonex-nanoflare-270-speed-badminton-racket"
+          "image": "nanoflare380s.png"
         },
         {
           "name": "Arcsaber 11 Pro",
-          "price": "$355 CAD",
+          "price": "$289 CAD",
           "category": "Control",
           "weight": "3U/4U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-astrox-100-zz-badminton-racket-kurenai"
+          "image": "arcsaber11p.png"
         },
         {
           "name": "Arcsaber 11 Play",
@@ -261,7 +201,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-arcsaber-11-play-badminton-racket"
+          "image": "arcsaber11p.png"
         },
         {
           "name": "Arcsaber 11 Tour",
@@ -271,17 +211,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-arcsaber-11-tour-badminton-racket"
-        },
-        {
-          "name": "Arcsaber FB",
-          "price": "$195 CAD",
-          "category": "Control",
-          "weight": "3U/4U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-arcsaber-fb-badminton-racket"
+          "image": "arcsaber11p.png"
         },
         {
           "name": "Arcsaber 71 Light",
@@ -291,17 +221,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-arcsaber-71-light-badminton-racket"
-        },
-        {
-          "name": "Voltric Z-Force II",
-          "price": "$320 CAD",
-          "category": "Attacking",
-          "weight": "3U/4U",
-          "balance": "Head-Heavy",
-          "playing_type": "Singles",
-          "racket_style": "Attack",
-          "image": "https://badmintonwarehouse.com/products/yonex-voltric-z-force-ii-badminton-racket"
+          "image": "arcsaber71light.png"
         },
         {
           "name": "Voltric Power Crunch",
@@ -311,7 +231,7 @@
           "balance": "Head-Heavy",
           "playing_type": "Singles/Doubles",
           "racket_style": "Attack",
-          "image": "https://badmintonwarehouse.com/products/yonex-voltric-power-crunch-badminton-racket"
+          "image": "voltricpc.png"
         },
         {
           "name": "Duora 10",
@@ -321,7 +241,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-duora-10-badminton-racket"
+          "image": "duora10.png"
         },
         {
           "name": "Duora Z-Strike",
@@ -331,7 +251,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-duora-z-strike-badminton-racket"
+          "image": "duorazstrike.png"
         },
         {
           "name": "Muscle Power 5",
@@ -341,37 +261,27 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-muscle-power-5-badminton-racket"
+          "image": "mp5.png"
         },
         {
-          "name": "Muscle Power 22",
-          "price": "$95 CAD",
+          "name": "Muscle Power 2",
+          "price": "$35 CAD",
           "category": "Beginner",
           "weight": "4U/5U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-muscle-power-22-badminton-racket"
+          "image": "mp2.png"
         },
         {
-          "name": "Muscle Power 29",
+          "name": "Muscle Power 8lt",
           "price": "$105 CAD",
           "category": "Beginner/Intermediate",
           "weight": "4U/5U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-muscle-power-29-badminton-racket"
-        },
-        {
-          "name": "Carbonex 25",
-          "price": "$135 CAD",
-          "category": "Intermediate",
-          "weight": "3U/4U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://www.badmintonalley.com/Yonex_Carbonex_25_Cab_25_Badminton_Racket_p/racket-yonex-carbonex-25.htm"
+          "image": "mp8lt.png"
         },
         {
           "name": "Carbonex 8000 Plus",
@@ -381,7 +291,7 @@
           "balance": "Head-Heavy",
           "playing_type": "Singles/Doubles",
           "racket_style": "Attack",
-          "image": "https://badmintonwarehouse.com/products/yonex-carbonex-8000-plus-badminton-racket"
+          "image": "carbonex8000plus.png"
         },
         {
           "name": "B4000",
@@ -391,7 +301,7 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://badmintonwarehouse.com/products/yonex-b4000-badminton-racket"
+          "image": "b4000.png"
         }
       ]
     },
@@ -400,104 +310,54 @@
       "rackets": [
         {
           "name": "3D Calibar 900C",
-          "price": "$370 CAD",
+          "price": "$170 CAD",
           "category": "Attacking",
           "weight": "3U",
           "balance": "Head-Heavy",
           "playing_type": "Singles",
           "racket_style": "Attack",
-          "image": "https://triplepointsports.com/products/li-ning-3d-calibar-900c-combat-badminton-racquet-unleash-your-performance"
-        },
-        {
-          "name": "3D Calibar 900B",
-          "price": "$370 CAD",
-          "category": "Balanced",
-          "weight": "3U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://www.lining.my/SalePage/Index/217555"
-        },
-        {
-          "name": "Turbocharging 75",
-          "price": "$340 CAD",
-          "category": "All-Around",
-          "weight": "3U/4U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://www.shopnings.com/li-ning-2018-3d-calibar-900c-powerful-badminton-racket-grey/"
-        },
-        {
-          "name": "Turbocharging 80",
-          "price": "$355 CAD",
-          "category": "Control",
-          "weight": "3U/4U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://e78.us/products/aypm438-4"
-        },
-        {
-          "name": "Turbocharging N9II",
-          "price": "$340 CAD",
-          "category": "All-Around",
-          "weight": "3U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://prokicksports.com/en-us/products/li-ning-3d-calibar-900-instinct-professional-badminton-racquet-black-gold-unstrung"
+          "image": "3dcalibar900c.png"
         },
         {
           "name": "Aeronaut 9000C",
-          "price": "$370 CAD",
+          "price": "$210 CAD",
           "category": "Control",
           "weight": "3U",
           "balance": "Even",
           "playing_type": "Singles",
           "racket_style": "Balance",
-          "image": "https://www.ebay.com/itm/256726961154"
+          "image": "aeronaut9000c.png"
         },
         {
-          "name": "Aeronaut 9000B",
-          "price": "$370 CAD",
-          "category": "Balanced",
-          "weight": "3U",
-          "balance": "Even",
-          "playing_type": "Singles/Doubles",
-          "racket_style": "Balance",
-          "image": "https://www.shopnings.com/li-ning-2018-3d-calibar-900c-powerful-badminton-racket-grey/"
-        },
-        {
-          "name": "Aeronaut 9000I",
-          "price": "$370 CAD",
-          "category": "Speed",
-          "weight": "4U",
-          "balance": "Head-Light",
-          "playing_type": "Doubles",
-          "racket_style": "Speed",
-          "image": "https://prokicksports.com/en-us/products/li-ning-3d-calibar-900-instinct-professional-badminton-racquet-black-gold-unstrung"
-        },
-        {
-          "name": "Windstorm 75",
-          "price": "$310 CAD",
+          "name": "Windstorm 72",
+          "price": "$159 CAD",
           "category": "Speed",
           "weight": "5U",
           "balance": "Head-Light",
           "playing_type": "Doubles",
           "racket_style": "Speed",
-          "image": "https://www.ebay.com/itm/256726961154"
+          "image": "windstorm72.png"
         },
         {
-          "name": "Tectonic 9",
-          "price": "$385 CAD",
+          "name": "Halbertec 8000",
+          "price": "$299 CAD",
           "category": "All-Around",
           "weight": "3U/4U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://www.shopnings.com/li-ning-2018-3d-calibar-900c-powerful-badminton-racket-grey/"
-        }
+          "image": "halbertec8000.png"
+        },
+        {
+          "name": "Axforce 80",
+          "price": "$270 CAD",
+          "category": "All-Around",
+          "weight": "3U/4U",
+          "balance": "Even",
+          "playing_type": "Singles/Doubles",
+          "racket_style": "Balance",
+          "image": "axforce80.png"
+        } 
       ]
     },
     {
@@ -505,24 +365,15 @@
       "rackets": [
         {
           "name": "Thruster Ryuga II",
-          "price": "$385 CAD",
+          "price": "$229 CAD",
           "category": "Attacking",
           "weight": "3U/4U",
           "balance": "Head-Heavy",
           "playing_type": "Singles",
           "racket_style": "Attack",
-          "image": "https://joybadminton.com/products/victor-thruster-ryuga-ii-pro-tk-ryugaii-g-dark-purple"
+          "image": "tr2.png"
         },
-        {
-          "name": "Thruster Falcon Enhanced",
-          "price": "$370 CAD",
-          "category": "Attacking",
-          "weight": "3U",
-          "balance": "Head-Heavy",
-          "playing_type": "Singles",
-          "racket_style": "Attack",
-          "image": "https://www.badmintonalley.com/Victor_Thruster_Ryuga_TK_RYUGA_2_Badminton_Racket_p/racket-victor-thruster-ryuga2j.htm"
-        },
+      
         {
           "name": "Thruster K Falcon",
           "price": "$355 CAD",
@@ -531,47 +382,27 @@
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Balance",
-          "image": "https://shop.sunsetbadminton.com/product/victor-ryuga-ii-td-badminton-racket/"
+          "image": "tkf.png"
         },
         {
           "name": "Auraspeed 90K II",
-          "price": "$370 CAD",
+          "price": "$199 CAD",
           "category": "Speed/Control",
           "weight": "3U/4U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Speed",
-          "image": "https://joybadminton.com/products/victor-thruster-ryuga-ii-pro-tk-ryugaii-g-dark-purple"
+          "image": "as90k2.png"
         },
         {
           "name": "Auraspeed 100X",
-          "price": "$385 CAD",
+          "price": "$269 CAD",
           "category": "Speed",
           "weight": "3U/4U",
           "balance": "Even",
           "playing_type": "Singles/Doubles",
           "racket_style": "Speed",
-          "image": "https://www.badmintonalley.com/Victor_Thruster_Ryuga_TK_RYUGA_2_Badminton_Racket_p/racket-victor-thruster-ryuga2j.htm"
-        },
-        {
-          "name": "Auraspeed 90S",
-          "price": "$355 CAD",
-          "category": "Speed",
-          "weight": "3U/4U",
-          "balance": "Head-Light",
-          "playing_type": "Doubles",
-          "racket_style": "Speed",
-          "image": "https://shop.sunsetbadminton.com/product/victor-ryuga-ii-td-badminton-racket/"
-        },
-        {
-          "name": "Jetspeed S12 II",
-          "price": "$370 CAD",
-          "category": "Doubles/Speed",
-          "weight": "4U",
-          "balance": "Head-Light",
-          "playing_type": "Doubles",
-          "racket_style": "Speed",
-          "image": "https://joybadminton.com/products/victor-thruster-ryuga-ii-pro-tk-ryugaii-g-dark-purple"
+          "image": "as100x.png"
         }
       ]
     }

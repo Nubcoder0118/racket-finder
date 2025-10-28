@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 import './App.css';
 import Comparison from "./Comparison";
+import Header from './components/Header';
+import Quiz from './components/Quiz';
+import Flashcard from './components/Flashcard';
+import RacketCard from './components/RacketCard';
+import RacketResults from './components/RacketResults';
+
 
 function App() {
   const flashcards = [
@@ -81,7 +87,7 @@ function App() {
     return `http://localhost:8000/images/${image}`;
   };
 
-  const saveFavorite = async (racket) => {
+  const saveFavorite = async(racket) => {
     try {
       const response = await fetch("http://localhost:8000/api/rackets", {
         method: "POST",
@@ -133,34 +139,18 @@ function App() {
 
   return (
     <> 
-      <div className = "header">
-        <h1 className = "title">Racket Finder</h1>
-        <nav>
-          <a onClick = {() => setView("finder")} className = "mainpage" href = "#">Find your Racket</a>
-          <a onClick={() => setView('comparison')} className = "comparison" href = "#">Comparison Tool</a>
-        </nav>
-      </div>
-    {view === 'finder' && (
-      <div className="flashcards-container">
-      {currentStep <= flashcards.length ? (
-        flashcards
-          .filter(card => card.id === currentStep)
-          .map(card => (
-            <div key={card.id} className="flashcard">
-              <h2>{card.question}</h2>
-              <div className="answers">
-                {card.answers.map((answer, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleSelect(card.id, answer)}
-                    className={answers[card.id] === answer ? "selected" : ""}
-                  >
-                    {answer}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))
+      <Header setView={setView} />
+      {view === 'finder' && (
+        <div className="flashcards-container">
+        {currentStep <= flashcards.length ? (
+          <Quiz 
+            flashcards={flashcards}
+            answers={answers}
+            currentStep={currentStep}
+            setAnswers={setAnswers}
+            setCurrentStep={setCurrentStep}
+          />
+        
         ) : (
           <div className="results">
             <h2>🎉 You finished!</h2>
@@ -213,8 +203,6 @@ function App() {
         selectedRacket2={selectedRacket2}
         onRacketClick={handleRacketClick}
       />
-      
-
     )}
         </>
     );
